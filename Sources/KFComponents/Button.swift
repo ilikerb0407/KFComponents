@@ -7,7 +7,7 @@
 
 import UIKit
 
-internal class Checkbox: UIButton {
+public class Checkbox: UIButton {
     private let size: CGFloat = 30
     var callBack: (() -> Void)?
 
