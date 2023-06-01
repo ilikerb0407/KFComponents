@@ -22,7 +22,7 @@ let package = Package(
             name: "KFComponents",
             dependencies: []),
         .target(name: "Test",
-               dependencies: []),
+               dependencies: ["KFComponents"]),
         .testTarget(
             name: "KFComponentsTests",
             dependencies: ["KFComponents"]),
