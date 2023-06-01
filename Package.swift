@@ -10,6 +10,7 @@ let package = Package(
         .library(
             name: "KFComponents",
             targets: ["KFComponents"]),
+        .library(name: "Test", targets: ["Test"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
