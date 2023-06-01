@@ -11,7 +11,7 @@ public class Test {
 
     public var number: Int = 5
 
-    init(number: Int) {
+    public init(number: Int) {
         self.number = number
     }
 
