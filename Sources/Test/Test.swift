@@ -9,9 +9,9 @@ import Foundation
 
 public class Test {
 
-    var number: Int = 5
+    public var number: Int = 5
 
-    func printNum() {
+    public func printNum() {
         print(number)
     }
 }
