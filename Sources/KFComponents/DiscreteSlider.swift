@@ -11,7 +11,7 @@ protocol DiscreteSliderDelegate: AnyObject {
     func discreteSlider(_ slider: DiscreteSlider, didSelectItemAtIndex index: Int)
 }
 
-class DiscreteSlider: UIControl {
+public class DiscreteSlider: UIControl {
     weak var delegate: DiscreteSliderDelegate?
 
     var options: [Int] = [] {
@@ -49,7 +49,7 @@ class DiscreteSlider: UIControl {
 
     private var handlePositionConstraint: NSLayoutConstraint?
 
-    override var intrinsicContentSize: CGSize {
+    public override var intrinsicContentSize: CGSize {
         CGSize(width: UIView.noIntrinsicMetric, height: 24.0)
     }
 
@@ -83,7 +83,7 @@ class DiscreteSlider: UIControl {
         handleView.addGestureRecognizer(panGesture)
     }
 
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         updateTrackTicks()
         updateHandlePosition()
